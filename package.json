@@ -1,0 +1,54 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@capterra/vendor-ui-components-accordion": "0.0.2-canary-20230207111534",
+    "@capterra/vendor-ui-components-alert": "0.2.1",
+    "@capterra/vendor-ui-components-breadcrumb": "0.1.1",
+    "@capterra/vendor-ui-components-button": "0.1.6",
+    "@capterra/vendor-ui-components-checkboxfield": "0.1.0",
+    "@capterra/vendor-ui-components-form": "0.2.2",
+    "@capterra/vendor-ui-components-icon": "0.4.0",
+    "@capterra/vendor-ui-components-layout": "0.2.4",
+    "@capterra/vendor-ui-components-loading": "0.2.1",
+    "@capterra/vendor-ui-components-modal": "0.0.2",
+    "@capterra/vendor-ui-components-pagination": "0.1.3",
+    "@capterra/vendor-ui-components-radiofield": "0.1.0",
+    "@capterra/vendor-ui-components-select": "0.2.3",
+    "@capterra/vendor-ui-components-selectfield": "0.2.1",
+    "@capterra/vendor-ui-components-starrating": "0.1.3",
+    "@capterra/vendor-ui-components-table": "0.1.3",
+    "@capterra/vendor-ui-components-text": "0.2.1",
+    "@capterra/vendor-ui-components-textarea": "0.1.1",
+    "@capterra/vendor-ui-components-textareafield": "0.2.1",
+    "@capterra/vendor-ui-components-textfield": "0.2.1",
+    "@capterra/vendor-ui-components-textinput": "0.1.1",
+    "@capterra/vendor-ui-components-toast": "0.1.3",
+    "@capterra/vendor-ui-components-tooltip": "0.2.2",
+    "@capterra/vendor-ui-styles": "0.5.2",
+    "@remix-run/node": "^1.15.0",
+    "@remix-run/react": "^1.15.0",
+    "@remix-run/serve": "^1.15.0",
+    "axios": "^1.3.5",
+    "isbot": "^3.6.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.15.0",
+    "@remix-run/eslint-config": "^1.15.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^8.27.0",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
