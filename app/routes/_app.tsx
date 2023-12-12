@@ -1,8 +1,6 @@
 import { Outlet } from "@remix-run/react";
 import { pageSidePadding } from "~/components/Text";
-import { Stack, Inline, styled, globalStyles } from "~/components/vendorUI";
-
-globalStyles();
+import { Stack, Inline, styled } from "~/components/vendorUI";
 
 const AppWrapper = styled(Stack, {
   minHeight: "100vh",
@@ -20,7 +18,7 @@ const BreadcrumbWrapper = styled(Inline, {
   borderBottom: "1px solid $grey",
 });
 
-const PageWrapper = styled("main", {
+const PageWrapper = styled(Stack, {
   flexGrow: 1,
   padding: `$4 ${pageSidePadding} $5`,
 });
@@ -39,8 +37,10 @@ export default function Index() {
       <BreadcrumbWrapper distribute="between" align="center">
         breadcrumb
       </BreadcrumbWrapper>
-      <PageWrapper>
-        <Outlet />
+      <PageWrapper gap={3} asChild>
+        <main>
+          <Outlet />
+        </main>
       </PageWrapper>
       <FooterWrapper gap={3}>y</FooterWrapper>
     </AppWrapper>

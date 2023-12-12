@@ -6,6 +6,7 @@ export * from "@capterra/vendor-ui-components-accordion";
 export * from "@capterra/vendor-ui-components-alert";
 export * from "@capterra/vendor-ui-components-breadcrumb";
 export * from "@capterra/vendor-ui-components-button";
+export * from "@capterra/vendor-ui-components-checkboxfield";
 // export * from "./Drawer";
 export * from "@capterra/vendor-ui-components-form";
 export * from "@capterra/vendor-ui-components-icon";

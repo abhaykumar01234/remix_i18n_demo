@@ -25,8 +25,22 @@ export const Heading = ({ children, ...restProps }: ChildProps) => (
   </Text>
 );
 
-export const SubHeading = ({ children, ...restProps }: ChildProps) => (
-  <Text size={4} weight="medium" color="brand" asChild>
+interface SubHeadingProps extends ChildProps {
+  color?:
+    | "main"
+    | "brand"
+    | "secondary"
+    | "inverted"
+    | "error"
+    | "currentColor";
+}
+
+export const SubHeading = ({
+  children,
+  color = "brand",
+  ...restProps
+}: SubHeadingProps) => (
+  <Text size={4} weight="medium" color={color} asChild>
     <h3 {...restProps}>{children}</h3>
   </Text>
 );
